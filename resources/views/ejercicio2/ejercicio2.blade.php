@@ -1,21 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <form action="" method="">
+@extends('Template.Template')
+@section ('plantillaweb')
+<form action="{{Route('resultado_ejer2')}}" method="POST">
+     {{ csrf_field() }}
 
-        <label>Digite nota 1:</label>
-        <input type="number" name="nota1" placeholder="Ingrese nota 1"><br>
-        <label>Digite nota 2:</label>
-        <input type="number" name="nota2" placeholder="Ingrese nota 2"><br>
-        <label>Digite nota 3:</label>
-        <input type="number" name="nota3" placeholder="Ingrese nota 3"><br>
+     <h1>Salario</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Nombre</label>
+                <input type="text" name="nombre" required><br>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Horas de trabajo</label>
+                <input type="number" name="horas" required><br>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Valor hora</label>
+                <input type="number" name="valorhora" required><br>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Bonificacion</label>
+                <input type="number" name="bonificacion" required><br>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Aux_Transporte</label>
+                <input type="number" name="Aux" required><br>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 p-2">
+                <label>Credito</label>
+                <input type="number" name="credito" required><br>
+            </div>
 
-        <input type="submit" name="btn_enviar" value="Enviar">
-</body>
-</html>
+            
+        </div>
+    </div>
+    <input type="submit" name="btn_enviar" value="enviar">
+
+
+ </form>
+@endsection

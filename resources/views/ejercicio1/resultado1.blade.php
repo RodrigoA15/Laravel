@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{$resultado1}}</p>
+  
+    <p>{{$notafinal}}</p>
 </body>
 </html>

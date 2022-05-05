@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{$resultado1}}</p>
+    <p>{{number_format($resultado)}}</p>
 </body>
 </html>
